@@ -5,3 +5,5 @@ cd projectname
 python manage.py runserver
 
 python manage.py startapp blog
+
+edi the command line
