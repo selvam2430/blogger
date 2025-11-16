@@ -1,0 +1,7 @@
+django-admin startaproject project1
+python -m django startaproject project1
+cd projectname
+
+python manage.py runserver
+
+python manage.py startapp blog
