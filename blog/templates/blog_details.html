@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:white;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <p>
+        {{blog.title}}
+        {{blog.description}}
+    </p>
+
+    <p>commment</p>
+    <p>
+        {% for i in comment_data %}
+        {{i.description}}
+        {% endfor %}
+    </p>
+</body>
+</html>

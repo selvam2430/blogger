@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>this is the edit form</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="_method" value="PATCH">
+        <input type="text" name="title" placeholder="title" value="{{form_edit.title}}">
+        <textarea name="description" id="" placeholder="Enter ...">{{form_edit.description}}</textarea>
+        <input type="text" name="author" placeholder="author name" value="{{form_edit.author}}">
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>

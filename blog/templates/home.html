@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <p>this is sample html;</p>
+
+    {% for i in blogs %}
+    <p><a href="{% url 'details_page' i.id %}">{{i.title}}</a></p>
+    <!-- <p>{{data.description}}</p> -->
+    <p>{{i.author}}</p>
+    {% endfor %}
+    <a href="{% url 'form_page' %}">add new blog</a>
+
+    <br>
+    <p><a href="{% url 'login_page' %}">Login</a></p><br>
+    <p><a href="{% url 'reg_page' %}">Register</a></p>
+
+</body>
+
+</html>

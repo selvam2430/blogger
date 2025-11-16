@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p, label {
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <div>
+
+        <p>
+            Add Blog
+        </p>
+        
+        <form action="{% url 'form_page' %}" method="post">
+            {% csrf_token %}
+            <label>title</label>
+            <input type="text" name="title" />
+            <label>content</label>
+            <textarea name="content"></textarea>
+            <label>author</label>
+            <input type="text" name="author"/>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
