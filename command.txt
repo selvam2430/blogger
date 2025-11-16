@@ -9,3 +9,5 @@ python manage.py startapp blog
 edi the command line
 
 frontend use message
+
+user backend
